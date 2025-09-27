@@ -1,18 +1,32 @@
 function adicionarTarefa() {
+
+    //Mensagem 
     let mensagem = "Tarefa adicionada com sucesso!";
-          document.getElementById("mensagem").textContent = mensagem;
     
-          let inputTarefa= document.getElementById("inputTarefa");
-          let tarefa= inputTarefa.value;
-          console.log(tarefa);
+    //Adicionar tarefa
+    let inputTarefa= document.getElementById("inputTarefa");
+    let tarefa= inputTarefa.value; //quando é input, coloca-se value
 
-          let listaTarefa=  document.getElementById("listaTarefa");
-          let novaTarefa= document.createElement("li");
+    //Aparecer a mensagem após clicar no botão 
+    document.getElementById("mensagem").textContent = mensagem;
+     
+    //Listar tarefa
+    let listaTarefa= document.getElementById("listaTarefa");
+    let novaTarefa= document.createElement("li");
 
-          novaTarefa.textContent= tarefa;
+    //Aparecer a tarefa na tela
+    novaTarefa.textContent= tarefa;
 
-          listaTarefa.appendChild(novaTarefa);
+    //Colocar a tarefa criada dentro da lista
+    listaTarefa.appendChild(novaTarefa);
 
-          inputTarefa.value="";
+    //Depois que adicionar a tarefa, o campo fica vazio
+    inputTarefa.value="";
+    
 
-  }
+  } 
+
+
+
+
+  
